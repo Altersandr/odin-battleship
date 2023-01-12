@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  background-color: rgb(41, 41, 40);
+}
+
+#board-container {
+  width: 600px;
+  height: 600px;
+  background-color: aliceblue;
+  display: grid;
+  gap: 0.125em;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+div[data-x] {
+  background-color: gray;
+}
+
+div[data-x] + .ship {
+  background-color: rgb(255, 0, 0);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.4rem;
+  width: 450px;
+  padding: 1.3rem;
+  min-height: 350px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  background-color: blueviolet;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
