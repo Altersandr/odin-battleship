@@ -9,16 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("const shipFactory = __webpack_require__(/*! ./ship */ \"./src/ship.js\");\n\nconst board = __webpack_require__(/*! ./shipPlacement */ \"./src/shipPlacement.js\");\n\n// window.addEventListener('DOMContentLoaded', ()=>{\n//   let board = [\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//     [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n//   ];\n//   document.getElementById('ship-placement-grid').\n// });\n\nconst playerBoard = document.getElementById(\"board-container\");\n// const addShip = (cell) => {\n//   return cell.addEventListener(\"click\", (e) => {\n//     board[cell.dataset.x][cell.dataset.y] = shipFactory();\n//   });\n// };\n\n// const placeShip =\nconst Gameboard = () => {\n  // let board = [\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  //   [\"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"],\n  // ];\n  // let x = 0;\n  // let y = 0;\n  // board.forEach((column) => {\n  //   x++;\n  //   y = 0;\n  //   column.forEach((row) => {\n  //     y++;\n  //     let cell = document.createElement(\"div\");\n  //     cell.dataset.x = x;\n  //     cell.dataset.y = y;\n  //     cell.addEventListener(\"click\", (e) => {\n  //       // cell.style.backgroundColor = \"gray\";\n  //       cell.classList.add(\"ship\");\n  //       board[cell.dataset.x - 1][cell.dataset.y - 1] = shipFactory(1);\n  //       console.log(board);\n  //     });\n\n  //     // addShip(cell, board);\n  //     playerBoard.appendChild(cell);\n  //   });\n  // });\n\n  const receiveAttack = (x, y) => {\n    // board[]\n  };\n\n  return board;\n};\n\nGameboard();\n\n// const addShip = (cell) => {\n//   return cell.addEventListener(\"click\", (e) => {\n//     board[cell.dataset.x][cell.dataset.y] = shipFactory();\n//   });\n// };\n// const gameBoard = boardFactory();\n\n//create a modal that asks the user to place the ships on a grid\n//when all the ships were placed, pass the newly created gameboard to the gameboard fn\n//\n\n\n//# sourceURL=webpack://odin-battleship/./src/main.js?");
-
-/***/ }),
-
 /***/ "./src/ship.js":
 /*!*********************!*\
   !*** ./src/ship.js ***!
@@ -69,8 +59,8 @@ eval("const shipFactory = __webpack_require__(/*! ./ship */ \"./src/ship.js\");\
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/main.js");
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/shipPlacement.js");
 /******/ 	
 /******/ })()
 ;
