@@ -15,7 +15,7 @@
   \*********************/
 /***/ ((module) => {
 
-eval("const shipFactory = (length, hits = 0) => {\n  const hit = () => hits++;\n  const isSunk = () => {\n    if (length <= hits) return true;\n    return false;\n  };\n  return { length, hits, isSunk, hit };\n};\n\n// let ship = shipFactory(4);\n// const newShip = shipFactory(5, 2, false);\n// console.log(ship.hit());\n// console.log(ship.isSunk());\n// console.log(ship.hit());\n// console.log(ship.hit());\n// console.log(ship.hit());\n// console.log(ship.hit());\n// console.log(ship.isSunk());\n\n// // ship.hit()\n// // console.log(personFactory(\"oleks\", 27));\n\n// export { shipFactory };\n\nmodule.exports = shipFactory;\n\n\n//# sourceURL=webpack://odin-battleship/./src/ship.js?");
+eval("const shipFactory = (length, hits = 0) => {\n  const hit = () => hits++;\n  const isSunk = () => {\n    if (length <= hits) return true;\n    return false;\n  };\n  return { length, hits, isSunk, hit };\n};\n\nmodule.exports = shipFactory;\n\n\n//# sourceURL=webpack://odin-battleship/./src/ship.js?");
 
 /***/ })
 

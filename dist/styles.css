@@ -1,19 +1,34 @@
+@font-face {
+  font-family: Kusanagi;
+  src: url(./assets/Kusanagi.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Kusanagi;
 }
 
+body,
 html {
   width: 100vw;
   height: 100vh;
-}
-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background-color: rgb(41, 41, 40);
 }
 
-#board-container {
-  width: 600px;
-  height: 600px;
+#title {
+  font-size: 4rem;
+  color: #ddd;
+}
+#board-container,
+#enemy-board-container {
+  width: 350px;
+  height: 340px;
   background-color: aliceblue;
   display: grid;
   gap: 0.125em;
@@ -21,13 +36,21 @@ body {
   grid-template-rows: repeat(10, 1fr);
 }
 
-div[data-x] {
-  background-color: gray;
+#content {
+  display: flex;
+  gap: 5em;
+}
+#footer {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 5%;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.2);
 }
 
-div[data-x] + .ship {
-  background-color: rgb(255, 0, 0);
-}
 div[data-v] + .ship {
   background-color: rgb(255, 0, 0);
 }
@@ -57,9 +80,13 @@ div[data-v] {
   position: absolute;
   top: 20%;
   left: 20%;
-  background-color: blueviolet;
+  background-color: rgb(218, 218, 218);
   border: 1px solid #ddd;
   border-radius: 15px;
+}
+
+[data-ship-name] {
+  color: rgb(42, 172, 30);
 }
 
 .modal .flex {
