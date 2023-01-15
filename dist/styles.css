@@ -55,6 +55,10 @@ div[data-v] + .ship {
   background-color: rgb(255, 0, 0);
 }
 
+div[data-v] + .miss {
+  background-color: rgb(2, 159, 231);
+}
+
 #ship-placement-grid {
   height: 450px;
   width: 100%;
