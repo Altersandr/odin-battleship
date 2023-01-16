@@ -51,15 +51,37 @@ html {
   background-color: rgb(255, 255, 255, 0.2);
 }
 
-div[data-v] + .ship {
+.grid .ship {
+  /* position: relative; */
   background-color: rgb(255, 0, 0);
 }
 
-div[data-v] + .miss {
+#enemy-board-container div[data-v]:hover,
+#ship-placement-grid div[data-v]:hover {
+  cursor: pointer;
+  background-color: rgb(70, 70, 70);
+}
+
+/* div[data-v]:hover + div[data-v] {
+  background-color: rgb(70, 70, 70);
+}
+
+div[data-v]:hover + div[data-v] + div[data-v] {
+  background-color: rgb(70, 70, 70);
+}
+
+div[data-v]:hover + div[data-v] + div[data-v] + div[data-v] {
+  background-color: rgb(70, 70, 70);
+}
+div[data-v]:hover + div[data-v] + div[data-v] + div[data-v] + div[data-v] {
+  background-color: rgb(70, 70, 70);
+} */
+.grid .miss {
   background-color: rgb(2, 159, 231);
 }
 
 #ship-placement-grid {
+  position: relative;
   height: 450px;
   width: 100%;
   place-self: center;
@@ -70,6 +92,7 @@ div[data-v] + .miss {
 }
 
 div[data-v] {
+  position: relative;
   background-color: gray;
 }
 
