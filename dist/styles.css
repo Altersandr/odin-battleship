@@ -62,6 +62,10 @@ html {
   background-color: rgb(70, 70, 70);
 }
 
+.grid .hit {
+  background-color: rgb(0, 0, 0);
+}
+
 /* div[data-v]:hover + div[data-v] {
   background-color: rgb(70, 70, 70);
 }
@@ -75,10 +79,10 @@ div[data-v]:hover + div[data-v] + div[data-v] + div[data-v] {
 }
 div[data-v]:hover + div[data-v] + div[data-v] + div[data-v] + div[data-v] {
   background-color: rgb(70, 70, 70);
-} */
+}
 .grid .miss {
   background-color: rgb(2, 159, 231);
-}
+} */
 
 #ship-placement-grid {
   position: relative;
