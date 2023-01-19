@@ -17,11 +17,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(41, 41, 40);
 }
 
 #title {
+  padding-top: 1em;
   font-size: 4rem;
   color: #ddd;
 }
@@ -29,7 +30,6 @@ html {
 #enemy-board-container {
   width: 350px;
   height: 340px;
-  background-color: aliceblue;
   display: grid;
   gap: 0.125em;
   grid-template-columns: repeat(10, 1fr);
@@ -52,7 +52,6 @@ html {
 }
 
 .grid .ship {
-  /* position: relative; */
   background-color: rgb(255, 0, 0);
 }
 
@@ -65,27 +64,16 @@ html {
 .grid .hit {
   background-color: rgb(0, 0, 0);
 }
-/*
-#ship-placement-grid div[data-v]:hover + div[data-v] {
-  background-color: rgb(70, 70, 70);
-}
-/*
-div[data-v]:hover + div[data-v] + div[data-v] {
-  background-color: rgb(70, 70, 70);
+
+#ship-placement-grid .hover {
+  background-color: rgb(26, 26, 26);
 }
 
-div[data-v]:hover + div[data-v] + div[data-v] + div[data-v] {
-  background-color: rgb(70, 70, 70);
-}
-div[data-v]:hover + div[data-v] + div[data-v] + div[data-v] + div[data-v] {
-  background-color: rgb(70, 70, 70);
-}*/
 .grid .miss {
   background-color: rgb(2, 159, 231);
 }
 
 #ship-placement-grid {
-  position: relative;
   height: 450px;
   width: 100%;
   place-self: center;
@@ -96,7 +84,6 @@ div[data-v]:hover + div[data-v] + div[data-v] + div[data-v] + div[data-v] {
 }
 
 div[data-v] {
-  position: relative;
   background-color: gray;
 }
 
@@ -110,10 +97,11 @@ div[data-v] {
   min-height: 500px;
   position: absolute;
   top: 20%;
-  left: 20%;
+  left: 37%;
   background-color: rgb(218, 218, 218);
   border: 1px solid #ddd;
   border-radius: 15px;
+  z-index: 2;
 }
 
 [data-ship-name] {
@@ -164,11 +152,6 @@ button {
   opacity: 1;
 }
 
-/* .btn-open {
-  position: absolute;
-  bottom: 150px;
-} */
-
 .overlay {
   position: fixed;
   top: 0;
@@ -180,10 +163,6 @@ button {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
   z-index: 1;
-}
-
-.modal {
-  z-index: 2;
 }
 
 .hidden {
